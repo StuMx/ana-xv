@@ -248,7 +248,17 @@ body, html {
     background-size: cover;
 }
 
+.close{
+    width: 22px;
+    height: 22px;
+    top: -2px;
+    position: absolute;
+    right: -5px;
+    border-radius: 10px;
+    padding: 0px 4px;
+    font-weight: bolder;
 
+}
 
 
 

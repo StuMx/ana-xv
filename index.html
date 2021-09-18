@@ -65,12 +65,12 @@
 
                             <div class="images">
                                 <ul>
-                                    <li><img src="./img/an3.jpeg" alt=""></li>
-                                    <li><img src="./img/an2.jpeg" alt=""></li>
-                                    <li><img src="./img/an4.jpeg" alt=""></li>
-                                    <li><img src="./img/an5.jpeg" alt=""></li>
-                                    <li><img src="./img/an1.jpeg" alt=""></li>
-                                    <li><img src="./img/an6.jpeg" alt=""></li>
+                                    <li><a href="./img/an3.jpeg" target="_blank"><img src="./img/an3.jpeg" alt=""></a></li>
+                                    <li><a href="./img/an2.jpeg" target="_blank"><img src="./img/an2.jpeg" alt=""></a></li>
+                                    <li><a href="./img/an4.jpeg" target="_blank"><img src="./img/an4.jpeg" alt=""></a></li>
+                                    <li><a href="./img/an5.jpeg" target="_blank"><img src="./img/an5.jpeg" alt=""></a></li>
+                                    <li><a href="./img/an1.jpeg" target="_blank"><img src="./img/an1.jpeg" alt=""></a></li>
+                                    <li><a href="./img/an6.jpeg" target="_blank"><img src="./img/an6.jpeg" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -100,8 +100,12 @@
     </div>
 
     <div class="confirmation">
+        <div class="close">X</div>
         No olvides confirmar tu asistencia haciendo <a href="https://forms.gle/KRddg5hgtxZ33gF1A">click aquí</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector(".close").addEventListener("click", function() { document.querySelector(".confirmation").style.display = "none"; })
+    </script>
 </body>
 </html>
