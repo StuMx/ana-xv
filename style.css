@@ -2,13 +2,14 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #f3f3f3;
+    background: url(./img/bg2.jpg) #f3f3f3;
+    background-attachment: fixed;
 }
 
 @media (orientation: landscape) {
     #welcome {
-        background: url(./img/an1.jpeg);
-        background-size: cover;
+        background: url(./img/anp1.png);
+        background-size: contain;
         background-repeat: no-repeat;
         height: 0;
         padding-top: 100vh;
@@ -19,13 +20,40 @@ body, html {
         position: absolute;
         top: 0;
         left: 0;
+        right: 1em;
+        bottom: 1em;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: #000;
+        font-size: 2em;
+        text-shadow: 0 0 5px #e6e6e6;
+    }
+    
+    #welcome__content > div {
+        max-width: 50%;
+    }
+    
+    #pic {
+        background: url(./img/an8.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 0;
+        padding-top: 100vh;
+        position: relative;
+    }
+    
+    #pic__content {
+        position: absolute;
+        top: 0;
+        left: 0;
         right: 0;
         bottom: 0;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        backdrop-filter: grayscale(147%) blur(1px);
         color: #f3f3f3;
         font-size: 2em;
     }
@@ -52,7 +80,7 @@ body, html {
         margin-left: 2em;
         cursor: pointer;
     }
-
+    
     .confirmation {
         position: fixed;
         bottom: 0;
@@ -67,7 +95,7 @@ body, html {
 
 @media (orientation: portrait) {
     #welcome {
-        background: url(./img/an1.jpeg);
+        background: url(./img/anp1.png);
         background-size: cover;
         background-repeat: no-repeat;
         height: 0;
@@ -86,9 +114,9 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        backdrop-filter: grayscale(147%) blur(1px);
-        color: #f3f3f3;
-        font-size: 2em;
+        /* backdrop-filter: grayscale(147%) blur(1px); */
+        font-size: 1em;
+        text-shadow: 0 0 5px #e6e6e6;
     }
     
     .welcome__content--hightligh {
@@ -96,7 +124,31 @@ body, html {
         font-weight: bold;
         line-height: 1rem;
     }
+
+    #pic {
+        background: url(./img/an8.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:  center;
+        height: 0;
+        padding-top: 100vh;
+        position: relative;
+    }
     
+    #pic__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #f3f3f3;
+        font-size: 1em;
+    }
+
     .menu {
         position: fixed;
         top: 0;
@@ -117,7 +169,7 @@ body, html {
         margin-left: 1em;
         cursor: pointer;
     }
-
+    
     .confirmation {
         position: fixed;
         top: 34px;
@@ -184,19 +236,37 @@ body, html {
 #map h1 {
     text-align: center;
     margin-bottom: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+#map__content-text {
+    margin: 2em 0;
+    background: #ffffffb8;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #gallery {
     background: #191919;
     color: #d6d6d6;
-    padding: 4em 0;
 }
 
 #gallery h1 {
     text-align: center;
 }
 
-#gallery ul {
+.separator {
+    height: 30px;
+    margin: -15px;
+    background: url(./img/line.png);
+    z-index: 2;
+    position: relative;
+}
+
+/* #gallery ul {
     display: flex;
     flex-wrap: wrap;
 }
@@ -207,15 +277,15 @@ body, html {
     list-style: none;
     margin: 0.5em;
 }
-
+/* 
 #gallery img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-}
+} */
 
-@media (max-aspect-ratio: 1/1) {
+/* @media (max-aspect-ratio: 1/1) {
     #gallery li {
         height: 30vh;
     }
@@ -225,9 +295,9 @@ body, html {
     #gallery li {
         height: 80vh;
     }
-}
+}  */
 
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+/* @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
     #gallery ul {
         flex-direction: row;
     }
@@ -241,6 +311,10 @@ body, html {
         max-height: 75vh;
         min-width: 0;
     }
+} */
+
+.splide__list img {
+    height: 500px;
 }
 
 .bg1 {
@@ -257,8 +331,5 @@ body, html {
     border-radius: 10px;
     padding: 0px 4px;
     font-weight: bolder;
-
+    
 }
-
-
-
