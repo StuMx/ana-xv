@@ -344,7 +344,7 @@ body, html {
     color: white;
     cursor: pointer;
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 100vh;
     right: -20rem;
     padding: 6rem 2rem 2rem 2rem;
