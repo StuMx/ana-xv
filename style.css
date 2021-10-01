@@ -132,6 +132,7 @@ body, html {
         align-items: flex-end;
         color: #f3f3f3;
         font-size: 1em;
+        padding: 1em;
     }
 
     .menu {
@@ -365,4 +366,19 @@ body, html {
   .nav a {
     color: #000;
     text-decoration: none;
+  }
+
+
+  #confirm {
+    height: 250px;
+    display: flex;
+    background: #1ad03f;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  #confirm>div {
+      width: inherit;
   }
