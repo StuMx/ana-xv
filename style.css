@@ -56,6 +56,7 @@ body, html {
         align-items: flex-end;
         color: #f3f3f3;
         font-size: 2em;
+        padding: 1em;
     }
     
     .welcome__content--hightligh {
@@ -64,22 +65,6 @@ body, html {
         line-height: 1em;
     }
     
-    .menu {
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        color: #FFF;
-        margin: 1em 2em;
-        font-size: 2em;
-        text-shadow: 1px 1px 3px black;
-    }
-    
-    .menu li {
-        display: inline;
-        margin-left: 2em;
-        cursor: pointer;
-    }
     
     .confirmation {
         position: fixed;
@@ -265,53 +250,6 @@ body, html {
     z-index: 2;
     position: relative;
 }
-
-/* #gallery ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#gallery li {
-    height: 25vh;
-    flex-grow: 1;
-    list-style: none;
-    margin: 0.5em;
-}
-/* 
-#gallery img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-} */
-
-/* @media (max-aspect-ratio: 1/1) {
-    #gallery li {
-        height: 30vh;
-    }
-}
-
-@media (max-height: 480px) {
-    #gallery li {
-        height: 80vh;
-    }
-}  */
-
-/* @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-    #gallery ul {
-        flex-direction: row;
-    }
-    
-    #gallery li {
-        height: auto;
-        width: 100%;
-    }
-    #gallery img {
-        width: 100%;
-        max-height: 75vh;
-        min-width: 0;
-    }
-} */
 
 .splide__list img {
     height: 500px;
